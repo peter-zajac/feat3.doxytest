@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://www.mathjax.org/mathjax/MathJax.js"></script>
 <script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -190,7 +197,7 @@ Optional: Specifies the 3D transformation angles in revolutions. Default to 0, 0
 </ul>
 <p >The optional rigid body transformation consists of the origin vector <em>v</em>, the offset vector <em>w</em> as well as a 3D rotation matrix <em>R</em>, which is given by the yaw-pitch-roll angle triplet, which define the following transformation mapping:</p>
 <p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[ x \mapsto w + R \cdot(x - v)\]" src="form_452.png"/><img class="formulaDsp dark-mode-visible" alt="\[ x \mapsto w + R \cdot(x - v)\]" src="form_452_dark.png"/>
+\[ x \mapsto w + R \cdot(x - v)\]
 </p>
 <dl class="section attention"><dt>Attention</dt><dd>The yaw-pitch-roll angles are given in revolutions (aka rotations aka full turns) rather than radians or degrees to avoid angles with a large number of digits for commonly used rotations. Note: 1 revolution = 360 degrees = 2&pi; radians</dd></dl>
 <p><b>Examples:</b><br  />

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://www.mathjax.org/mathjax/MathJax.js"></script>
 <script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -869,7 +876,7 @@ template&lt;typename SubType_ , int blocks_&gt; </div>
 
 <p>Applies this matrix onto a vector. </p>
 <p >This function performs </p><p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[r \leftarrow this\cdot x \]" src="form_189.png"/><img class="formulaDsp dark-mode-visible" alt="\[r \leftarrow this\cdot x \]" src="form_189_dark.png"/>
+\[r \leftarrow this\cdot x \]
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -933,7 +940,7 @@ template&lt;typename SubType_ , int blocks_&gt; </div>
 
 <p>Applies this matrix onto a vector. </p>
 <p >This function performs </p><p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[r \leftarrow y + \alpha\cdot this\cdot x \]" src="form_190.png"/><img class="formulaDsp dark-mode-visible" alt="\[r \leftarrow y + \alpha\cdot this\cdot x \]" src="form_190_dark.png"/>
+\[r \leftarrow y + \alpha\cdot this\cdot x \]
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

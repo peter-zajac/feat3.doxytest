@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://www.mathjax.org/mathjax/MathJax.js"></script>
 <script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -862,7 +869,7 @@ template&lt;typename Mesh_ &gt; </div>
 <p>Applies a "proper rigid" transformation onto the chart. </p>
 <p >Let <em>v</em> denote the <code>origin</code> world point, <em>w</em> the <code>offset</code> world point and <em>R</em> the rotation matrix corresponding to the <code>angles</code>, then this function applies the following transformation for any point <em>x</em> of the chart:</p>
 <p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[ x \mapsto w + R\cdot (x - v) \]" src="form_135.png"/><img class="formulaDsp dark-mode-visible" alt="\[ x \mapsto w + R\cdot (x - v) \]" src="form_135_dark.png"/>
+\[ x \mapsto w + R\cdot (x - v) \]
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

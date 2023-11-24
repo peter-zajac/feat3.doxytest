@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://www.mathjax.org/mathjax/MathJax.js"></script>
 <script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -530,7 +537,7 @@ template&lt;typename T_ &gt; </div>
 
 <p>Calculates the binomial coefficient. </p>
 <p >This function calculates the binomial coefficient </p><p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[ {n \choose k} := \frac{n!}{k!(n-k)!} \]" src="form_379.png"/><img class="formulaDsp dark-mode-visible" alt="\[ {n \choose k} := \frac{n!}{k!(n-k)!} \]" src="form_379_dark.png"/>
+\[ {n \choose k} := \frac{n!}{k!(n-k)!} \]
 </p>
 <dl class="section attention"><dt>Attention</dt><dd>This function works only for integral data types; it will give incorrect results for floating point data types!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -839,7 +846,7 @@ template&lt;typename T_ &gt; </div>
 
 <p>Calculates the (partial) factorial. </p>
 <p >This function calculates the coefficient </p><p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[ f(n,m) := \prod_{k=m}^n k \]" src="form_378.png"/><img class="formulaDsp dark-mode-visible" alt="\[ f(n,m) := \prod_{k=m}^n k \]" src="form_378_dark.png"/>
+\[ f(n,m) := \prod_{k=m}^n k \]
 </p>
 <p> The factorial <em>n!</em> is given by <em>f(n,0)</em>.</p>
 <dl class="section attention"><dt>Attention</dt><dd>Please keep in mind that the factorial becomes very huge very fast, i.e. for integral data types, one should honor the following boundaries to avoid overflow:<ul>

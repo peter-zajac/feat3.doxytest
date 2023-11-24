@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://www.mathjax.org/mathjax/MathJax.js"></script>
 <script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -162,11 +169,9 @@ class FEAT::Meshopt::ConcentrationFunctionPowOfDist&lt; DT_ &gt;</div><p >Defaul
   </dd>
 </dl>
 <p>This maps a signed distance to a concentration according to  </p><p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[
+\[
    c(d) = (\alpha + |d|)^\beta, \alpha \geq 0.
-\]" src="form_227.png"/><img class="formulaDsp dark-mode-visible" alt="\[
-   c(d) = (\alpha + |d|)^\beta, \alpha \geq 0.
-\]" src="form_227_dark.png"/>
+\]
 </p>
  
 <p class="definition">Definition at line <a class="el" href="mesh__concentration__function_8hpp_source.html#l01728">1728</a> of file <a class="el" href="mesh__concentration__function_8hpp_source.html">mesh_concentration_function.hpp</a>.</p>
@@ -313,7 +318,7 @@ template&lt;typename DT_ &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl light-mode-visible" alt="$ c'(d) = \beta (\alpha |d|)^{(\beta-1)} * sign(d) $" src="form_241.png"/><img class="formulaInl dark-mode-visible" alt="$ c'(d) = \beta (\alpha |d|)^{(\beta-1)} * sign(d) $" src="form_241_dark.png"/> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>\( c&#39;(d) = \beta (\alpha |d|)^{(\beta-1)} * sign(d) \) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="mesh__concentration__function_8hpp_source.html#l01826">1826</a> of file <a class="el" href="mesh__concentration__function_8hpp_source.html">mesh_concentration_function.hpp</a>.</p>
 
@@ -354,7 +359,7 @@ template&lt;typename DT_ &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><img class="formulaInl light-mode-visible" alt="$ c(d) = (\alpha |d|)^\beta $" src="form_240.png"/><img class="formulaInl dark-mode-visible" alt="$ c(d) = (\alpha |d|)^\beta $" src="form_240_dark.png"/> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>\( c(d) = (\alpha |d|)^\beta \) </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="mesh__concentration__function_8hpp_source.html#l01813">1813</a> of file <a class="el" href="mesh__concentration__function_8hpp_source.html">mesh_concentration_function.hpp</a>.</p>
 

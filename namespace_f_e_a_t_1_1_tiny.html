@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://www.mathjax.org/mathjax/MathJax.js"></script>
 <script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -748,7 +755,7 @@ template&lt;typename T_ , int m_, int n_, int sma_, int sna_, int smb_, int snb_
 
 <p>Computes the dot-product of two matrices. </p>
 <p >This function returns the dot-product of <em>A</em> and <em>B:</em> </p><p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[\sum_{i=0}^{m-1} \sum_{j=0}^{n-1} a_{ij} \cdot b_{ij}\]" src="form_381.png"/><img class="formulaDsp dark-mode-visible" alt="\[\sum_{i=0}^{m-1} \sum_{j=0}^{n-1} a_{ij} \cdot b_{ij}\]" src="form_381_dark.png"/>
+\[\sum_{i=0}^{m-1} \sum_{j=0}^{n-1} a_{ij} \cdot b_{ij}\]
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -905,7 +912,7 @@ template&lt;typename T_ , int n_, int sa_, int sb_&gt; </div>
 
 <p>Computes the dot-product of two vectors. </p>
 <p >This function returns the dot-product of <em>a</em> and <em>b:</em> </p><p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[\sum_{k=0}^{n-1} a_k\cdot b_k\]" src="form_380.png"/><img class="formulaDsp dark-mode-visible" alt="\[\sum_{k=0}^{n-1} a_k\cdot b_k\]" src="form_380_dark.png"/>
+\[\sum_{k=0}^{n-1} a_k\cdot b_k\]
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

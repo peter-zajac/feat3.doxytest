@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="http://www.mathjax.org/mathjax/MathJax.js"></script>
 <script type="text/javascript" src="darkmode_toggle.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
@@ -146,7 +153,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Function_&gt;<br />
 class FEAT::Assembly::Common::LaplaceFunctional&lt; Function_ &gt;</div><p >Laplace functional implementation. </p>
 <p >This functor implements the <a class="el" href="class_f_e_a_t_1_1_assembly_1_1_linear_functional.html" title="Base class for Linear Functionals.">LinearFunctional</a> interface with </p><p class="formulaDsp">
-<img class="formulaDsp light-mode-visible" alt="\[ \ell(\varphi) := \int_\Omega -\Delta f\cdot\varphi \]" src="form_80.png"/><img class="formulaDsp dark-mode-visible" alt="\[ \ell(\varphi) := \int_\Omega -\Delta f\cdot\varphi \]" src="form_80_dark.png"/>
+\[ \ell(\varphi) := \int_\Omega -\Delta f\cdot\varphi \]
 </p>
 <p> for an analytic function <em>f</em>.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
