@@ -18,7 +18,6 @@ jobs:
       with:
         doxyfile-path: "./doxy_in/doxyfile_github"
         working-directory: "."
-        enable-latex: true
       # deploy documentation as github page
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
